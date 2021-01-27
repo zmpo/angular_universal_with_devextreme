@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {
+  DxButtonModule,
   DxDateBoxModule,
   DxDropDownButtonModule,
   DxFileUploaderModule,
@@ -16,6 +17,7 @@ import {
   DxSelectBoxModule,
   DxTagBoxModule,
   DxTextBoxModule,
+  DxTreeMapModule,
   DxTreeViewModule,
   DxValidatorModule
 } from 'devextreme-angular';
@@ -27,19 +29,7 @@ import {
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    DxDateBoxModule,
-    DxDropDownButtonModule,
-    DxNumberBoxModule,
-    DxSelectBoxModule,
-    DxTagBoxModule,
-    DxTextBoxModule,
-    DxScrollViewModule,
-    DxValidatorModule,
-    DxPopupModule,
-    DxFileUploaderModule,
-    DxProgressBarModule,
-    DxTreeViewModule,
-    DxLoadPanelModule
+    DxButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
